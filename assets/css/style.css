@@ -22,6 +22,14 @@ body {
     border: 1px solid #000000;
 }
 
+/*
+#container-2 {
+
+}
+*/
+
+/* Navbar Begin */
+
 ul {
     list-style-type: none;
 }
@@ -86,9 +94,14 @@ nav li a:hover {
     color: #bbb;
 }
 
+/* Navbar Einde */
+
+
+/* Section Begin */
+
 section {
     z-index: 0;
-    height: 100vh;
+    height: 94vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +115,45 @@ section h2 {
     text-align: center;
     text-transform: capitalize;
     text-shadow: 10px 10px 3px rgba(0,0,0, 0.2);
-  }
+}
+
+section .container-2 {
+    margin: 100px;
+}
+
+section #h1 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+section #h2 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .text-container {
+    display: flex;
+}
+
+section .text-container .text-box {
+    margin: 20px;
+    padding: 20px;
+    background: #00c2cb;
+}
+
+section .text-container .text-box  {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+/* Section Einde */
+
+
+/* Header Begin */
 
 header {
     background-size: cover;
@@ -127,6 +178,11 @@ header img:hover{
     transition: 0.70s;
     transform: rotate(360deg);
 }
+
+/* Header Einde */
+
+
+/* TextSlide Begin */
 
 .text-0 {
     margin-top: -250px;
@@ -180,6 +236,11 @@ header img:hover{
     animation-iteration-count: infinite;
 }
 
+/* TextSlide Einde */
+
+
+/* Cards Begin */
+
 .card {
     display: grid;
     grid-template-columns: 300px;
@@ -192,9 +253,9 @@ header img:hover{
     font-family: roboto;
     text-align: center;
 
-  }
+}
 
-  .card2 {
+.card2 {
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: 210px 210px 80px;
@@ -205,65 +266,82 @@ header img:hover{
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     font-family: roboto;    
     text-align: center;
-  }
+}
 
-  .card-image {
+.card-image {
     grid-area: image;
-  }
-  .card-text {
+}
+
+.card-text {
     grid-area: text;
-  }
-  .card-stats {
-    grid-area: stats; 
-  }
+}
 
-  .card-image {
+.card-stats {
+    grid-area: stats; 
+}
+
+.card-image {
     grid-area: image;
-    background: url("../../img/20220129_153000.jpg");
+    background: rgb(66,58,119);
+    background: linear-gradient(294deg,
+    rgba(66,58,119,1) 0%, rgba(76,69,150,1) 12%,
+    rgba(61,58,124,1) 21%, rgba(60,59,136,1) 32%,
+    rgba(74,77,149,1) 46%, rgba(59,66,136,1) 61%, 
+    rgba(61,72,145,1) 71%, rgba(107,121,187,1) 81%, 
+    rgba(80,90,124,1) 91%, rgba(53,66,96,1) 100%);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: contain;
     background-repeat: no-repeat;
-  }
+}
 
-  .card-text {
+.card-text {
     grid-area: text;
     margin: 25px;
-  }
-  .card-text .date {
+}
+
+.card-text .date {
     color: rgb(255, 7, 110);
     font-size:13px;
-  }
-  .card-text p {
+}
+
+.card-text p {
     color: grey;
     font-size:15px;
     font-weight: 300;
-  }
-  .card-text h2 {
+}
+
+.card-text h2 {
     margin-top:0px;
     font-size:28px;
-  }
+}
 
-  .card:hover {
+.card:hover {
     transform: scale(1.15);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-  }
-  .card {
+}
+
+.card {
     transition: 0.9s ease;
     cursor: pointer;
     margin: 30px;
-  }
+}
 
-  .card2:hover {
+.card2:hover {
     transform: scale(1.15);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-  }
-  .card2 {
+}
+
+.card2 {
     transition: 0.9s ease;
     cursor: pointer;
     margin: 30px;
-  }
+}
 
+/* Cards Einde */
+
+
+/* Content Begin */
 
 #content {
     color: #000;
@@ -289,6 +367,11 @@ header img:hover{
     padding-left: 15px;
 }
 
+/* Content Einde */
+
+
+/* Experimental Begin */
+
 #experimental {
     height: 500px;
     padding: 50px;
@@ -296,6 +379,37 @@ header img:hover{
 #experimental h2 {
     text-align: center;
 }
+
+/* Experimental Einde */
+
+
+/* HTML, CSS & JAVASCRIPT Begin */
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+/* HTML, CSS & JAVASCRIPT Einde */
+
+
+/* Footer Begin */
 
 #footerColor {
     background-color: #101419;
@@ -320,7 +434,11 @@ header img:hover{
     padding: 10px;
 }
 
-/* Keyframes */
+/* Footer Einde */
+
+
+/* Keyframes Begin */
+/* SlideText Keyframes */
 
 @keyframes anim-1 {
 	0%, 8.3% { left: -120%; opacity: 0; }
@@ -339,3 +457,39 @@ header img:hover{
     74.96%, 91.62% { left: 25%; opacity: 1; }
     100% { left: 40%; opacity: 0; }
 }
+
+
+@keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+/* Keyframes Einde */
