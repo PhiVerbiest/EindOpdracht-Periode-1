@@ -1,71 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wie ben ik?</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wie ben ik?</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../EindOpdracht-Periode-1/assets/js.js"></script>
 </head>
+
 <body>
-    <div id="container"> <!-- Begin container -->
+  <div id="container">
+    <!-- Begin container -->
 
-         <!--Header-->
+    <!--Header-->
 
+    <section id="headerPage">
+      <header>
         <div id="header">
-            <img src="https://via.placeholder.com/350x350" alt="" />
-          <h1>Phi Verbiest</h1>
+          <div class="wrapHead">
+            <div id="brand">
+              <h1>PHI</h1>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="#headerPage" class="scroll">Home</a></li>
+                <li><a href="#contentPage" class="scroll">Content</a></li>
+                <li><a href="#experimentalPage" class="scroll">Experimental</a></li>
+              </ul>
+            </nav>
+          </div>
+
         </div>
 
-        <!--Content-->
+        <img src="img/mijzelf.jpg" alt="mijzelf" />
 
-        <div id="content">
-            <h2>Over Mij</h2>
-            <div id="intro">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              architecto, sint molestias vitae, numquam at ipsam placeat
-              exercitationem natus animi quasi rerum laboriosam, dolores omnis optio
-              voluptatem aut alias. Quia.
-            </div>
-            <div id="overig">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi non,
-              ipsa amet, molestiae consequuntur iste earum quaerat, beatae minus
-              expedita architecto? Assumenda eaque id voluptates blanditiis et?
-              Corrupti, dolore asperiores.
-            </div>
-            <div id="kennis">
-              <ul>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-              </ul>
-            </div>
-          </div>
+        <!--Animation slide text-->
 
-          <div id="experimental">
-            <h2>Experimental Zone</h2>
-         </div>
+        <div id="bg-gray-text">
+          <h1 class="text-1">
+            Mijn naam is Phi Verbiest
+          </h1>
+          <h1 class="text-2">
+            Ik ben 17 Jaar
+          </h1>
+          <h1 class="text-3">
+            Ik woon in Deurne (Noord-Brabant)
+          </h1>
+        </div>
 
-         <!--Footer-->
 
-         <div id="footer">
-            &copy; 2022
-            <br />
-            <ul>
-              <li>
-                <a href="#" title="Instagram"
-                  ><img src="assets/images/instagram.png" alt="Instagram"
-                /></a>
-              </li>
-              <li>
-                <a href="#" title="Youtube"
-                  ><img src="assets/images/youtube.png" alt="Youtube"
-                /></a>
-              </li>
-            </ul>
-          </div>
+      </header>
+    </section>
+    <!--Content-->
 
-    </div> <!-- Einde container -->
+    <section id="contentPage">
+      <div id="content">
+        <h2>Over Mij</h2>
+        <div id="intro">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          architecto, sint molestias vitae, numquam at ipsam placeat
+          exercitationem natus animi quasi rerum laboriosam, dolores omnis optio
+          voluptatem aut alias. Quia.
+        </div>
+        <div id="overig">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi non,
+          ipsa amet, molestiae consequuntur iste earum quaerat, beatae minus
+          expedita architecto? Assumenda eaque id voluptates blanditiis et?
+          Corrupti, dolore asperiores.
+        </div>
+        <div id="kennis">
+          <ul>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experimentalPage">
+      <div id="experimental">
+        <h2>Experimental Zone</h2>
+      </div>
+    </section>
+
+
+    <!--Footer-->
+
+    <div id="footer">
+      &copy; 2022
+      <br />
+      <ul>
+        <li>
+          <a href="#" title="Instagram"><img src="assets/images/instagram.png" alt="Instagram" /></a>
+        </li>
+        <li>
+          <a href="#" title="Youtube"><img src="assets/images/youtube.png" alt="Youtube" /></a>
+        </li>
+      </ul>
+    </div>
+
+  </div> <!-- Einde container -->
 </body>
+
 </html>

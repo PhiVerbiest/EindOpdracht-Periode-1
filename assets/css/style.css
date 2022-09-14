@@ -17,30 +17,155 @@ body {
     border: 1px solid #000000;
 }
 
-#header {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #984447;
+ul {
+    list-style-type: none;
 }
 
-#header img {
+.wrapHead {
+    width: 90%;
+    margin: 0 auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.wrapHead.fixed-to-top {
+    width: 96%;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    background: rgba(38, 50, 56, 0.5);
+    padding: 10px 0;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+#header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header.fixed-to-top {
+    background: rgba(38, 50, 56, 1);
+}
+
+#brand{
+    color: #ccc;
+    float: left;
+}
+
+#brand h1 {
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 5px #111;
+}
+
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+nav li a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #e1e1e1;
+    transition: all ease-in-out 0.5s;
+}
+
+nav li a:hover {
+    color: #bbb;
+}
+
+section {
+    z-index: 0;
+}
+
+section h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-transform: capitalize;
+    text-shadow: 10px 10px 3px rgba(0,0,0, 0.2);
+  }
+
+header {
+    text-align: end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../../img/whiteblur.jpg");
+    width: 1520px;
+    height: 720px;
+    font-size: 800;
+}
+
+#bg-gray-text {
+    width: 78%;
+    height: 4%;
+    background: rgba(38, 50, 56, 0.5);
+    padding: 10px 0;
+    transition: all ease-in-out 0.5s;
+    margin: -157px 0px 0px 0px;
+}
+
+header img {
     width:250px;
     height: 250px;
     border-radius: 50%;
     border: 10px solid #fff;
+    margin-right: 5%;
+    margin-top: 10%;
 }
 
-#header img:hover{
+header img:hover{
     transition: 0.70s;
     transform: rotate(360deg);
 }
 
-#header h1 {
+.text-1 {
     padding-top: 30px;
-    color: #fff;
+    text-align: start;
+    margin-left: -20%;
+    margin-top: 212px;
+    animation-name: anim-1;
 }
 
+.text-2 {
+    padding-top: 30px;
+    text-align: start;
+    margin-left: -20%;
+    margin-top: 212px;
+    animation-name: anim-2;
+}
+
+.text-3 {
+    padding-top: 30px;
+    text-align: start;
+    margin-left: -20%;
+    margin-top: 212px;
+    animation-name: anim-3;
+}
+
+
+.text-1,
+.text-2, 
+.text-3 {
+    position: absolute;
+    display: block;
+    top: 2em;
+
+    width: 60%;
+
+    font-size: 2.4em;
+
+    animation-duration: 18s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
 
 #content {
     background-color: #ADD9F4;
@@ -91,4 +216,24 @@ body {
 
 #footer ul li a {
     padding: 10px;
+}
+
+/* Keyframes */
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -120%; opacity: 0; }
+    8.3%,25% { left: 25%; opacity: 1; }
+    33.33%, 100% { left: 40%; opacity: 0;}
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+    41.63%, 58.29% { left: 25%; opacity: 1; }
+    66.66%, 100% { left: 70%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% { left: 25%; opacity: 1; }
+    100% { left: 40%; opacity: 0; }
 }
