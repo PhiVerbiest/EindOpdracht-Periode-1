@@ -15,18 +15,11 @@ body {
 }
 
 #container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
     width: fit-content;
     margin: 0 auto;
     border: 1px solid #000000;
 }
 
-/*
-#container-2 {
-
-}
-*/
 
 /* Navbar Begin */
 
@@ -105,8 +98,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
-    cursor: context-menu;
 }
 
 section h2 {
@@ -118,7 +109,7 @@ section h2 {
 }
 
 section .container-2 {
-    margin: 100px;
+    margin: 100px;  
 }
 
 section #h1 {
@@ -139,7 +130,8 @@ section .text-container {
 section .text-container .text-box {
     margin: 20px;
     padding: 20px;
-    background: #00c2cb;
+    background: white;
+    border-radius: 20px;
 }
 
 section .text-container .text-box  {
@@ -160,7 +152,7 @@ header {
     text-align: end;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 1520px;
+    width: 1516px;
     height: 720px;
     font-size: 800;
 }
@@ -170,7 +162,7 @@ header img {
     height: 250px;
     border-radius: 50%;
     border: 10px solid #fff;
-    margin-right: 5%;
+    margin-right: 5%;   
     margin-top: 10%;
 }
 
@@ -227,7 +219,7 @@ header img:hover{
     display: block;
     top: 2em;
 
-    width: 60%;
+    width: 45%;
 
     font-size: 2.1em;
 
@@ -372,13 +364,26 @@ header img:hover{
 
 /* Experimental Begin */
 
-#experimental {
+#experimental { 
     height: 500px;
     padding: 50px;
 }
 #experimental h2 {
     text-align: center;
 }
+
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .20em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .5s step-end infinite;
+  }
 
 /* Experimental Einde */
 
@@ -414,17 +419,22 @@ header img:hover{
 #footerColor {
     background-color: #101419;
     opacity: 72%;
-    height: 100px;
+    height: 93px;
 }
 
 #footer {
     color: #fff;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
 }
+
+#footer #footerText {
+    padding-top: 18px;
+    padding-left: 20px;
+}
+
 #footer ul {
     display: block;
-    padding-top: 10px;
 }
 #footer ul li {
     display: inline-block;
@@ -491,5 +501,17 @@ header img:hover{
       opacity: 1;
     }
 }
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 
 /* Keyframes Einde */
