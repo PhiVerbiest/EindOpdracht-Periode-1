@@ -274,13 +274,19 @@ header img:hover{
 
 .card-image {
     grid-area: image;
-    background: rgb(66,58,119);
-    background: linear-gradient(294deg,
-    rgba(66,58,119,1) 0%, rgba(76,69,150,1) 12%,
-    rgba(61,58,124,1) 21%, rgba(60,59,136,1) 32%,
-    rgba(74,77,149,1) 46%, rgba(59,66,136,1) 61%, 
-    rgba(61,72,145,1) 71%, rgba(107,121,187,1) 81%, 
-    rgba(80,90,124,1) 91%, rgba(53,66,96,1) 100%);
+    background: url(../../img/schaakbord.png);
+    background-color: #000;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-image2 {
+    grid-area: image;
+    background: url(../../img/muursteentjes.png);
+    background-position: fixed;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: contain;
@@ -344,6 +350,8 @@ header img:hover{
 
 #content h2 {
     text-align: center;
+    padding-bottom: 20px;
+    margin-left: 20px;
 }
 
 #content #intro {
