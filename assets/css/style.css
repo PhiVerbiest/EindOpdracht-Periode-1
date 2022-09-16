@@ -98,6 +98,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 section h2 {
@@ -115,6 +116,7 @@ section .container-2 {
 section #h1 {
     font-size: 3rem;
     margin: 20px;
+    color: white;
 }
 
 section #h2 {
@@ -139,6 +141,21 @@ section .text-container .text-box  {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+section .text-container .text-box3 {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+section .text-container .text-box3  {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-right: 100px;
 }
 
 
@@ -296,6 +313,7 @@ header img:hover{
 .card-text {
     grid-area: text;
     margin: 25px;
+    text-align: center;
 }
 
 .card-text .date {
@@ -334,6 +352,7 @@ header img:hover{
     transition: 0.9s ease;
     cursor: pointer;
     margin: 30px;
+    text-align: center;
 }
 
 /* Cards Einde */
@@ -342,13 +361,14 @@ header img:hover{
 /* Content Begin */
 
 #content {
-    color: #000;
+    color: white;   
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
 }
 
 #content h2 {
+    color: black;
     text-align: center;
     padding-bottom: 20px;
     margin-left: 20px;
@@ -372,26 +392,19 @@ header img:hover{
 
 /* Experimental Begin */
 
-#experimental { 
-    height: 500px;
-    padding: 50px;
-}
-#experimental h2 {
+#h2-2 { 
+    justify-content: center;
     text-align: center;
+    margin-top: 50px;
+    color: white;
+    padding-right: 50px;
 }
 
-.typewriter h1 {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .20em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .5s step-end infinite;
-  }
+#video {
+    width: 1045px;
+    height: 600px;
+    padding: 20px;
+}
 
 /* Experimental Einde */
 
@@ -509,17 +522,5 @@ header img:hover{
       opacity: 1;
     }
 }
-
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
 
 /* Keyframes Einde */
